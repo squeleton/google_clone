@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced search</title>
+    <link rel="icon" type="img" href="https://www.pngmart.com/files/16/Google-Logo-PNG-Image.png">
+    <style>
+        .primer{
+            display: flex;
+            flex-direction: column;
+            }
+
+            body{
+                background-color: #202324;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: white;
+            }
+
+            .lavel{  
+            margin: 0.5rem 0;
+        
+                background-color: #202324;
+                border:2px solid white;
+                padding: 10px;
+               color: white;
+             padding-right: 300px;
+          
+            }
+           .fase{
+            display: flex;
+        
+            justify-content: left;
+            
+           }
+
+           .a{
+            margin-left: 71px;
+           }
+           .e{
+            margin-left: 45px;
+           }
+           .i{
+            margin-left: 40px;
+           }
+           .o{
+            background-color: #202324;
+                border:2px solid white;
+                padding: 10px;
+               color: white;
+            margin-left:100px;
+           }
+           .u{
+            background-color: #202324;
+                border:2px solid white;
+                padding: 10px;
+               color: white;
+            margin-left: 50;
+           }
+           .button{
+            margin-top: 40px;
+            padding: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(7, 50, 118);
+            color:white;
+           font-size: 14px;
+           border: none;
+           }
+
+           .button:hover{
+            background-color: #202324;
+            border:1px solid rgb(7, 50, 118);
+           }
+
+          
+    </style>
+</head>
+<body>
+    <header id="up">
+      <a href="index.html"><img width="130px" src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="google_logo"> </a>  
+        <h2 style="color: rgb(255, 81, 0);">Advanced search</h2>
+    </header>
+    <div id="main">
+        <form action="https://www.google.com/search">
+        <div class="fase">
+           
+            <fieldset class="primer" > 
+                <h3>Find pages with</h4>
+           <label  id="all-label">all these words: <input class="lavel a" type="text" name="as_q"   /></label>
+           <label  id="exact-label">this exact word or phrase: <input class="lavel" type="text" name="as_epq"   /></label>
+           <label  id="any-label">any of these words: <input class="lavel e" type="text" name="as_oq"  /></label>
+           <label  id="none-label">none of these words:<input class="lavel i" type="text"  name="as_eq"  /></label>
+           <label  id="numbers-label">numbers of: <input class="o" style="padding-left: 150px;" type="number" min="0" max="1000000000" /> to <input style="padding-left: 150px;" class="u" type="number" min="0" max="1000000000" ></label>
+           <center>  <button class="button" type="submit" id="adbtn" value="Advanced search">Advanced search</button></center>
+        
+              </fieldset>
+
+             
+        </div>
+       
+        </form>
+    </div>
+</body>
+</html>
